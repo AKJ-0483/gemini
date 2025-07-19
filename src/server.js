@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const { AppDataSource } = require("./data-source");
 
 const app = express();
 
@@ -13,8 +14,18 @@ app.get("/health", (req, res) => {
   res.json({ message: "Gemini Backend Clone server is healthy" });
 });
 
-// Start Server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
-});
+AppDataSource.initialize()
+  .then(() => {
+    console.log("✅ Connected to PostgreSQL with TypeORM");
+
+    app.get("/health", (req, res) => {
+      res.json({ message: "Gemini Backend Clone server is healthy" });
+    });
+
+    app.listen(process.env.PORT, () => {
+      console.log(`🚀 Server running at http://localhost:${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("❌ Error initializing database:", err);
+  });
