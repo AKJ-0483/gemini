@@ -11,7 +11,12 @@ const AppDataSource = new DataSource({
   database: process.env.DB_NAME,
   synchronize: true, // ✅ for dev only — use migrations in prod
   logging: false,
-  entities: [],
+  entities: [
+    require("./entity/user"),
+    require("./entity/chatroom"),
+    require("./entity/message"),
+    require("./entity/subscription"),
+  ],
 });
 
 module.exports = { AppDataSource };
