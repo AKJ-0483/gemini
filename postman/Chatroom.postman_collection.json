@@ -28,11 +28,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/",
+					"raw": "http://3.110.176.251/chatroom/",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"chatroom",
 						""
 					]
 				}
@@ -51,11 +56,16 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/",
+					"raw": "http://3.110.176.251/chatroom/",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"chatroom",
 						""
 					]
 				}
@@ -74,11 +84,16 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/dca9a2cd-fdb2-417f-a7ca-10df2293f447",
+					"raw": "http://3.110.176.251/chatroom/dca9a2cd-fdb2-417f-a7ca-10df2293f447",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"chatroom",
 						"dca9a2cd-fdb2-417f-a7ca-10df2293f447"
 					]
 				}
@@ -106,12 +121,17 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/63bd96fe-8fa9-49e6-aef0-6078879914e5/message",
+					"raw": "http://3.110.176.251/chatroom/dca9a2cd-fdb2-417f-a7ca-10df2293f447/message",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
-						"63bd96fe-8fa9-49e6-aef0-6078879914e5",
+						"chatroom",
+						"dca9a2cd-fdb2-417f-a7ca-10df2293f447",
 						"message"
 					]
 				}

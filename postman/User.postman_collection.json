@@ -19,11 +19,16 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/me",
+					"raw": "http://3.110.176.251/user/me",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"user",
 						"me"
 					]
 				}

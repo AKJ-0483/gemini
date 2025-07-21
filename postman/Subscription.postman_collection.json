@@ -28,9 +28,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseUrl}}/subscribe/pro",
+					"raw": "http://3.110.176.251/subscribe/pro",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
 						"subscribe",
@@ -59,9 +63,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{baseUrl}}/subscription/status",
+					"raw": "http://3.110.176.251/subscription/status",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
 						"subscription",
@@ -77,9 +85,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/webhook/stripe",
+					"raw": "http://3.110.176.251/webhook/stripe",
+					"protocol": "http",
 					"host": [
-						"{{baseUrl}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
 						"webhook",

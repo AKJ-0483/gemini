@@ -22,11 +22,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/signup",
+					"raw": "http://3.110.176.251/auth/signup",
+					"protocol": "http",
 					"host": [
-						"{{baseURL}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"auth",
 						"signup"
 					]
 				}
@@ -48,11 +53,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/send-otp",
+					"raw": "http://3.110.176.251/auth/send-otp",
+					"protocol": "http",
 					"host": [
-						"{{baseURL}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"auth",
 						"send-otp"
 					]
 				}
@@ -74,11 +84,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/verify-otp",
+					"raw": "http://3.110.176.251/auth/verify-otp",
+					"protocol": "http",
 					"host": [
-						"{{baseURL}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"auth",
 						"verify-otp"
 					]
 				}
@@ -100,11 +115,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/forgot-password",
+					"raw": "http://3.110.176.251/auth/forgot-password",
+					"protocol": "http",
 					"host": [
-						"{{baseURL}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"auth",
 						"forgot-password"
 					]
 				}
@@ -132,11 +152,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/change-password",
+					"raw": "http://3.110.176.251/auth/change-password",
+					"protocol": "http",
 					"host": [
-						"{{baseURL}}"
+						"3",
+						"110",
+						"176",
+						"251"
 					],
 					"path": [
+						"auth",
 						"change-password"
 					]
 				}
