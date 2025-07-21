@@ -7,12 +7,22 @@ const app = express();
 
 // Middleware
 app.use(cors());
+
 app.post(
   "/webhook/stripe",
   express.raw({ type: "application/json" }),
   require("./src/controllers/subscriptionController").handleWebhook
 );
+
 app.use(express.json());
+
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    uptime: process.uptime(),
+    timestamp: new Date(),
+  });
+});
 
 const authRoutes = require("./src/routes/authRoutes");
 app.use("/auth", authRoutes);
