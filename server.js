@@ -34,8 +34,8 @@ AppDataSource.initialize()
       res.json({ message: "Gemini Backend Clone server is healthy" });
     });
 
-    app.listen(process.env.PORT, () => {
-      console.log(`🚀 Server running at http://localhost:${process.env.PORT}`);
+    app.listen(process.env.PORT, "0.0.0.0", () => {
+      console.log(`🚀 Server running at http://0.0.0.0:${process.env.PORT}`);
     });
   })
   .catch((err) => {
