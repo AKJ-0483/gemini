@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "47383e3c-374d-497e-9072-2e7777a93886",
+		"name": "Subscription",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27824378",
+		"_collection_link": "https://www.postman.com/ayi-dev-team/workspace/gemini/collection/27824378-47383e3c-374d-497e-9072-2e7777a93886?action=share&source=collection_link&creator=27824378"
+	},
+	"item": [
+		{
+			"name": "Subscribe Pro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/subscribe/pro",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"subscribe",
+						"pro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscription Status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseUrl}}/subscription/status",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"subscription",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/webhook/stripe",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"webhook",
+						"stripe"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://3.110.176.251",
+			"type": "default"
+		}
+	]
+}

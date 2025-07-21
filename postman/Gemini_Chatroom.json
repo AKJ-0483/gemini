@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "f5a90e0c-b43d-46e7-8677-5455a8101ac0",
+		"name": "Chatroom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27824378",
+		"_collection_link": "https://www.postman.com/ayi-dev-team/workspace/gemini/collection/27824378-f5a90e0c-b43d-46e7-8677-5455a8101ac0?action=share&source=collection_link&creator=27824378"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Project Kuvaka Tech\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Chatrooms",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/dca9a2cd-fdb2-417f-a7ca-10df2293f447",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"dca9a2cd-fdb2-417f-a7ca-10df2293f447"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{vault:json-web-token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"content\": \"Will AI take our jobs in the next 5 years?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/63bd96fe-8fa9-49e6-aef0-6078879914e5/message",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"63bd96fe-8fa9-49e6-aef0-6078879914e5",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000/chatroom",
+			"type": "default"
+		}
+	]
+}
