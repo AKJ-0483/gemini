@@ -26,7 +26,7 @@ exports.getChatrooms = async (userId) => {
     .select(["chatroom", "user.id", "user.mobile", "user.name"])
     .getMany();
 
-  await redisClient.setEx(cacheKey, 60, JSON.stringify(chatrooms)); // 10 min TTL
+  await redisClient.setEx(cacheKey, 600, JSON.stringify(chatrooms)); // 10 min TTL
   return chatrooms;
 };
 
